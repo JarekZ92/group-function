@@ -1,5 +1,5 @@
 
-function group() {
+(function () {
     const cities = [
         
             {name: 'New York', size: '1213km'},
@@ -7,9 +7,9 @@ function group() {
             {name: 'Szanghaj', size: '5341km'}
     ]
 
-    const groupElements = _groupBy(cities, function(city){
+    const groupElements = _.groupBy(cities, function(city){
         return city.size
     })
 
     console.log(groupElements)
-}
+}())
